@@ -3942,3 +3942,7 @@ body.is-ie #wrapper > section > .content > section {
     padding: 4rem;
   }
 }
+
+left-align {
+  text-align: right;
+}
