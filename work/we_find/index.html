@@ -37,22 +37,46 @@
             <div class="content">
                 <span class="image main"><img src="/images/gallery/fulls/weFind.PNG" alt="" /></span>
                 <p>
-                    <b>We Find is a fullstack market research application using React and Django.</b>I woorked on We Find as a fullstack developer while hired as a contractor at Shuttl.io. 
+                    <b>We Find is a fullstack market research application using React and Django.</b>I worked on We Find as a full-stack
+                    software development contractor at Shuttl.io. We Find uses a chrome plugin and web application dashboard to help
+                    digital marketers survey potential influencer clients and
+                    identify oppurtunties which resonate with thier audience and image.
                 </p>
+                <p>I worked on building up the front and back end services for WeFind dashboard. Although initally a challenge, I became
+                    accustomed with creating the front end user experience and developing the api used by the application. The api
+                    serviced the larger apis of facebook, twitter, instagram, youtube, snap chat, and the application's and pooled data
+                    to create an influencer profile. The back end service then organized the sea of influencer data into more actionable
+                    analytics such as engagement rate, audience demographics, and brand affinity.</p>
+                <p> Properly building the api integration, preparing the data, and formatting the data in an appealing fashion on the
+                    platform was challenging but I eventually became accustomed to pivoting between roles</p>
+                <p>The application needed to scale and handle a large amount of requests from users. Since the application was using
+                    third party libraries, a que system was needed to handle the api pull requests. The user datagram protocol was used
+                    as the basis for building the messaging pipeline because of its ability to scale and process large amounts of data.
+                </p>
+                <p>Docker was used to help manage the infastructure needed to build the pipeline. When the user makes a request for an
+                    influencer report, the api service will try to fulfill the request with reports available from a SQS database. If
+                    the api cannot fulfill the report or the user is request an up-to-date version, the api will make a request to an
+                    AWS Lambda service. The AWS Lambda service handle's the request ques and is send and recieve requests from
+                    third-party apis. The pipeline is event based which cut downs on the number of requests the service needs to fulfill
+                    and the implementation of AWS allows the pipeline to easily scale.</p>
+                <p>While working on We Find I learned how to develop a web application from the front and backend, how to build a
+                    integrated api service, and how to properly position a live service application to scale for long term growth.</p>
+                <a href="https://www.trywefind.com/"><b>Learn more about We Find</b></a><br>
+                <a href="https://www.shuttl.io/"><b>Learn more about Shuttl.io</b></a>
             </div>
         </section>
         <!-- Copyright -->
         <div class="copyright">
-            &copy; Untitled. All rights reserved. Design:
+            &copy; Quigjam.Me. All rights reserved. Design:
             <a href="https://html5up.net">HTML5 UP</a>.
         </div>
-    </div>
-
-    <!-- Scripts -->
-    <script src="/assets/js/jquery.min.js"></script>
-    <script src="/assets/js/jquery.scrolly.min.js"></script>
-    <script src="/assets/js/browser.min.js"></script>
-    <script src="/assets/js/breakpoints.min.js"></script>
-    <script src="/assets/js/util.js"></script>
-    <script src="/assets/js/main.js"></script>
-</body>
+        </div>
+        
+        <!-- Scripts -->
+        <script src="/assets/js/jquery.min.js"></script>
+        <script src="/assets/js/jquery.scrolly.min.js"></script>
+        <script src="/assets/js/browser.min.js"></script>
+        <script src="/assets/js/breakpoints.min.js"></script>
+        <script src="/assets/js/util.js"></script>
+        <script src="/assets/js/main.js"></script>
+        </body>
